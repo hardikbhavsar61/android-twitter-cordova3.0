@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+        <!-- TWITTER -->
+        <script src="plugins/Twitter/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+        <script src="plugins/Twitter/jsOAuth-1.3.6.js" type="text/javascript" charset="utf-8"></script>
+        <script src="plugins/Twitter/TwitterHelper.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script>
+            document.addEventListener('deviceready', function() {
+                
+                
+            }, false);
+        </script>
+        <!--
+         Twitter Testing
+         ===============
+        -->
+        
+        <h4> Twitter App </h4>
+        <table border="1">
+            <tr>
+                <th>Login using Twitter</th>
+                <th>
+                    <button id="loginBtn" onclick="Twitter.init()">Login</button>
+                    <button id="logoutBtn" onclick="logOut();">Logout</button>
+                </th>
+            </tr>
+            <tr id="tweetText" style="display:none;">
+                <td colspan="2"><textarea id="tweet" style="display:none;"></textarea></td>
+            </tr>
+            
+            <tr><td colspan="2"><div id="welcome">Please Login to use this app</div></td></tr>
+            <tr><td colspan="2"><div id="welcome">If You are already login it will directly tweet your pre-defined message.</div></td></tr>
+        </table>
+       
+    </body>
+</html>
