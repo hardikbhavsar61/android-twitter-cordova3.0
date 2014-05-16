@@ -30,7 +30,7 @@ Android
 
 9. Now give reference for following files in index.html
 	e.g.
-		<script src="plugins/Twitter/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="plugins/Twitter/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
         <script src="plugins/Twitter/jsOAuth-1.3.6.js" type="text/javascript" charset="utf-8"></script>
         <script src="plugins/Twitter/TwitterHelper.js" type="text/javascript" charset="utf-8"></script>
 		
