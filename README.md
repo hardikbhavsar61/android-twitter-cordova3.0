@@ -38,7 +38,7 @@ Android
 		
 11. Sample index.html
 
-	<html>
+<html>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -78,6 +78,6 @@ Android
             <tr><td colspan="2"><div id="welcome">Please Login to use this app</div></td></tr>
             <tr><td colspan="2"><div id="welcome">If You are already login it will directly tweet your pre-defined message.</div></td></tr>
         </table>
-       
+</body>       
 </html>
-</body>
+
